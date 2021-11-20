@@ -8,6 +8,6 @@ The folders are arranged on following manner:
 
 Each ViT16 and ViT32 folders contains the following folders which are designed in following manner:
 
-1. Version 1 --> Only the classification head is trained
-2. Version 2 --> Classification head and 11th block are trained
-3. Version 3 --> Classification head, 10th and 11th blocks are trained
+1. Version 1 --> Only the classification head is trained --> 4K Parameters 
+2. Version 2 --> Classification head and 11th block are trained --> 7M Parameters
+3. Version 3 --> Classification head, 10th and 11th blocks are trained --> 14M Parameters
