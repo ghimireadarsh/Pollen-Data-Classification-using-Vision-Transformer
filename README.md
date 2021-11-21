@@ -10,16 +10,28 @@ Each ViT16 and ViT32 folders contains the following folders which are designed i
 
 1. Version 1 --> Only the classification head is trained --> 4K Parameters 
 2. Version 2 --> Classification head and 11th block are trained --> 7M Parameters
-3. Version 3 --> Classification head, 10th and 11th blocks are trained --> 14M Parameters
+3. Version 3 --> Classification head, (10, 11) blocks are trained --> 14M Parameters
+4. Version 4 --> Classification head, (9, 10, 11) blocks are trained --> 21M Parameters
+5. Version 5 --> Classification head, (8, 9, 10, 11) blocks are trained --> 28M Parameters
+6. Version 6 --> Classification head, (7, 8, 9, 10, 11) blocks are trained --> 35M Parameters
 
-Performance of different models trained for 5 epochs
-|        Model       |      Model Part trained       |  Validation Score|
+
+Several experiments were performed, providing below results.
+Performance of different models trained for 10 epochs, and the performance plateau was obtained while best performance are summarized below.
+|        Model       |      Model Part trained       | Validation Score |
 |:------------------:|:-----------------------------:|:----------------:|
-|ViT16               |             Head only         |     91.9%        |
-|ViT16               |           Head + 11th block   |     93.1%        |
-|ViT16               |   Head + 11th + 10th  block   |     94.2%        |
+|ViT16               |   Head only                   |     91.9%        |
+|ViT16               |   Head + 11th block           |     93.1%        |
+|ViT16               |   Head + (11,10)  block       |     94.2%        |
+|ViT16               |   Head + (11,10,9)  block     |     94.8%        |
+|ViT16               |   Head + (11,10,9,8)  block   |     94.6%        |
+|ViT16               |   Head + (11,10,9,8,7)  block |     94.9%        |
+|--------------------|-------------------------------|------------------|
 |ViT32               |   Head only                   |     91.8%        |
 |ViT32               |   Head + 11th block           |     93.8%        |
-|ViT32               |   Head + 11th + 10th  block   |     94.3%        |
+|ViT32               |   Head + (11,10)  block       |     94.3%        |
+|ViT32               |   Head + (11,10,9)  block     |     95.1%        |
+|ViT32               |   Head + (11,10,9,8)  block   |     93.8%        |
+|ViT32               |   Head + (11,10,9,8,7)  block |     94.1%        |
 
 _Test data score has not been computed yet, since model to be trained has not been trained completely. After the best model chosen from above result is confirmed, the model will be trained for more epoches, and final model will be used to compute the test performance._
