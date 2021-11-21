@@ -23,7 +23,7 @@ Performance of different models trained for 10 epochs, and the performance plate
 |ViT16               |   Head only                   |     91.9%        |
 |ViT16               |   Head + 11th block           |     93.1%        |
 |ViT16               |   Head + (11,10)  block       |     94.2%        |
-|ViT16               |   Head + (11,10,9)  block     |     94.8%        |
+|ViT16               |   Head + (11,10,9)  block     |     94.5%        |
 |ViT16               |   Head + (11,10,9,8)  block   |     94.6%        |
 |ViT16               |   Head + (11,10,9,8,7)  block |     94.9%        |
 |--------------------|-------------------------------|------------------|
