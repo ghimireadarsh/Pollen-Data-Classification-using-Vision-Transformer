@@ -17,22 +17,38 @@ Each ViT16 and ViT32 folders contains the following folders which are designed i
 
 
 Several experiments were performed, providing below results.
-Performance of different models trained for 10 epochs, and the performance plateau was obtained while best performance are summarized below.
-|        Model       |      Model Part trained       | Validation Score |
-|:------------------:|:-----------------------------:|:----------------:|
-|ViT16               |   Head only                   |     92.4%        |
-|ViT16               |   Head + 11th block           |     94.2%        |
-|ViT16               |   Head + (11,10)  block       |     94.5%        |
-|ViT16               |   Head + (11,10,9)  block     |     94.5%        |
-|ViT16               |   Head + (11,10,9,8)  block   |     94.6%        |
-|ViT16               |   Head + (11,10,9,8,7)  block |     94.9%        |
-|--------------------|-------------------------------|------------------|
-|ViT32               |   Head only                   |     91.8%        |
-|ViT32               |   Head + 11th block           |     93.8%        |
-|ViT32               |   Head + (11,10)  block       |     94.3%        |
-|ViT32               |   Head + (11,10,9)  block     |     95.1%        |
-|ViT32               |   Head + (11,10,9,8)  block   |     93.8%        |
-|ViT32               |   Head + (11,10,9,8,7)  block |     94.1%        |
+Performance of different models trained for 10 epochs, and the performance plateau were obtained for all the models. The best performance of the different models are summarized below.
+|        Model       |      Model Part trained         | Validation Score |
+|:------------------:|:-------------------------------:|:----------------:|
+|====================|==========Adam Optimizer=========|==================|
+|ViT16               |   Head only                     |     92.4%        |
+|ViT16               |   Head + 11th block             |     94.2%        |
+|ViT16               |   Head + (11,10)  block         |     94.5%        |
+|ViT16               |   Head + (11,10,9)  block       |     94.5%        |
+|ViT16               |   Head + (11,10,9,8)  block     |     94.6%        |
+|ViT16               |   Head + (11,10,9,8,7)  block   |     94.9%        |
+|--------------------|---------------------------------|------------------|
+|ViT32               |   Head only                     |     92.3%        |
+|ViT32               |   Head + 11th block             |     94.5%        |
+|ViT32               |   Head + (11,10)  block         |     94.1%        |
+|ViT32               |   Head + (11,10,9)  block       |     94.5%        |
+|ViT32               |   Head + (11,10,9,8)  block     |     94.9%        |
+|ViT32               |   Head + (11,10,9,8,7)  block   |     94.5%        |
+|====================|=======AdaBelief Optimizer=======|==================|
+|ViT16               |   Head only                     |     92.7%        |
+|ViT16               |   Head + 11th block             |     94.5%        |
+|ViT16               |   Head + (11,10)  block         |     95.0%        |
+|ViT16               |   Head + (11,10,9)  block       |     95.1%        |
+|ViT16               |   Head + (11,10,9,8)  block     |     94.7%        |
+|ViT16               |   Head + (11,10,9,8,7)  block   |     95.2%        |
+|--------------------|---------------------------------|------------------|
+|ViT32               |   Head only                     |     91.9%        |
+|ViT32               |   Head + 11th block             |     94.5%        |
+|ViT32               |   Head + (11,10)  block         |     94.6%        |
+|ViT32               |   Head + (11,10,9)  block       |     95.2%        |
+|ViT32               |   Head + (11,10,9,8)  block     |     95.1%        |
+|__ViT32__           |   Head + (11,10,9,8,7)  block   |   __95.6%__      |
+|ViT32               |   Head + (11,10,9,8,7,6)  block |     94.6%        |
 
 Best trained model and latest checkpoints can be found in this [link](https://kuacae-my.sharepoint.com/:f:/g/personal/100058927_ku_ac_ae/ElAIxKpwEE1FtXSUAY435A4B7EIXLa7ouQMnJ-uwcJ5uWw?e=6mKEjd)
 
