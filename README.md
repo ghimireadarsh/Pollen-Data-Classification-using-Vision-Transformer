@@ -52,5 +52,3 @@ Performance of different models trained for 10 epochs, and the performance plate
 
 Best trained model and latest checkpoints can be found in this [link](https://kuacae-my.sharepoint.com/:f:/g/personal/100058927_ku_ac_ae/ElAIxKpwEE1FtXSUAY435A4B7EIXLa7ouQMnJ-uwcJ5uWw?e=6mKEjd)
 
-
-_Test data score has not been computed yet, since model to be trained has not been trained completely. After the best model chosen from above result is confirmed, the model will be trained for more epoches, and final model will be used to compute the test performance._
