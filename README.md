@@ -1,6 +1,6 @@
 # Pollen-Data-Classification-using-Vision-Transformer
 
-This work is done for fulfillment of project of Course __Machine Vision and Image Understanding__. The final report of the completed work can be found in this [link](Final_Report.pdf).
+This work is done for fulfillment of project of Course __Machine Vision and Image Understanding__. Final report of the completed work can be found in this [link](Final_Report.pdf).
 
 In this project, we have decided to explore the current state of the art vision transformer for testing pollen grain image classification problem from ICPR 2020. 
 We have decided to work on this topic because we believe this work will be noble for this challenge and will also help us get a deeper understanding of the multi head self attention mechanism for vision tasks. 
